@@ -25,7 +25,7 @@ const Hero = () => {
                 {/* LEFT IMAGE BOX */}
                 <div className="w-full md:w-2/3 bg-white rounded-3xl p-5 shadow-lg">
                     <img
-                        src="/images/banner/hot-air-balloon-realistic-dreamscape.jpg"
+                        src="/images/banner/xerox1.jpg"
                         alt="Order Prints Online"
                         className="w-full h-full object-contain rounded-2xl"
                     />
@@ -50,7 +50,7 @@ const Hero = () => {
 
                 <div className="w-full md:w-2/3  bg-white rounded-3xl p-5 shadow-lg">
                     <img
-                        src="/images/banner/hot-air-balloon-realistic-dreamscape.jpg"
+                        src="/images/banner/xerox2.avif"
                         alt="Order Prints Online"
                         className="w-full h-full object-contain rounded-2xl"
                     />
@@ -68,6 +68,28 @@ const Hero = () => {
             </div>
         </SwiperSlide>
 
+{/* ================= SLIDE 3 ================= */}
+        {/* <SwiperSlide>
+            <div className="h-full w-full flex flex-col md:flex-row items-center justify-center px-4 md:px-10 gap-6">
+                <div className="w-full md:w-2/3 bg-white rounded-3xl p-5 shadow-lg">
+                    <img
+                        src="/images/banner/xerox3.jpeg"
+                        alt="Order Prints Online"
+                        className="w-full h-full object-contain rounded-2xl"
+                    />
+                </div>
+
+                <div className="w-full md:w-1/3 flex items-center justify-center">
+                    <div className="bg-transparent backdrop-blur-lg shadow-md rounded-2xl px-10 py-8 text-start w-full md:w-auto">
+                        <h2 className="text-2xl font-semibold mb-2">Print Quick</h2>
+                        <button className="text-xl mt-3 flex items-center gap-2 justify-center">
+                            →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </SwiperSlide> */}
     </Swiper>
 </section>
 

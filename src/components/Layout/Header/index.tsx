@@ -143,11 +143,9 @@ const Header: React.FC = () => {
               </div>
             )} */}
              <Link
-              href="#"
+              href="/contact"
               className="hidden lg:block btn_outline btn-2 hover-outline-slide-down rounded-lg"
-              onClick={() => {
-                setIsSignInOpen(true);
-              }}
+            
             >
               <span className="!py-2 !px-4">Contact Us</span>
             </Link>

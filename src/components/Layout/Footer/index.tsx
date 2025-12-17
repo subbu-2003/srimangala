@@ -68,7 +68,7 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mt-4 mb-2">Follow us</h4>
               <div className="flex gap-3">
-                {["instagram", "facebook", "x", "linkedin", "pinterest"].map(icon => (
+                {["instagram", "facebook", "gmb", "youtube", "threads"].map(icon => (
                   <Image
                     key={icon}
                     src={`/icons/${icon}.png`}
@@ -81,21 +81,12 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* App Buttons */}
-            <div className="flex gap-3 mt-4">
-              <Image src="/images/google-play.png" alt="Google Play" width={120} height={40} />
-              <Image src="/images/app-store.png" alt="App Store" width={120} height={40} />
-            </div>
+        
           </div>
 
         </div>
 
-        {/* Payment Icons */}
-        <div className="flex justify-center gap-6 mt-10">
-          <Image src="/images/payments/visa.png" alt="Visa" width={60} height={40} />
-          <Image src="/images/payments/mastercard.png" alt="Mastercard" width={60} height={40} />
-          <Image src="/images/payments/upi.png" alt="UPI" width={60} height={40} />
-        </div>
+    
 
         {/* Copyright */}
         <div className="text-center text-gray-500 text-sm mt-6">

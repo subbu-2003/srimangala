@@ -14,13 +14,9 @@ const BlogPage = () => {
     ];
     return (
         <>
-            <HeroSub
-                title="Blog"
-                description="Discover a wealth of insightful materials meticulously crafted to provide you with a comprehensive understanding of the latest trends."
-                breadcrumbLinks={breadcrumbLinks}
-            />
+        
             <BlogList />
-            <TicketSection/>
+       
         </>
     );
 };

@@ -9,42 +9,44 @@ const BlogList: React.FC = () => {
             title: "Best Printing Shop in Anna Nagar, Chennai – Why KP Square Publication Stands Out",
             date: "2025-01-12",
             excerpt: "Finding a reliable printing shop in Chennai can be challenging, especially when you need quick, high-quality prints without any delay. ",
-            coverImage: "/blog/printer.jpg",
+            coverImage: "/images/packaging/labelss.jpg",
         },
         {
             title: "Top 7 Reasons Why Anna Nagar Residents Prefer KP Square Publication for Xerox Services",
             date: "2025-02-05",
             excerpt: "Residents of Anna Nagar and surrounding areas often need fast and clear photocopy services, whether for school, office, legal work, or bulk duplication. ",
-            coverImage: "/blog/printer.jpg",
+            coverImage: "/images/packaging/labels.jpg",
         },
         {
             title: "Why Scanning Services Are in High Demand in Chennai & How We Help Digitize Your Documents",
             date: "2025-02-15",
             excerpt: "Digital documentation has become essential for Chennai residents, especially for government submissions, job applications, and corporate record-keeping.",
-            coverImage: "/blog/printer.jpg",
+            coverImage: "/images/packaging/stickers.avif",
         },
          {
             title: "Best Binding Shop in Anna Nagar – Perfect for College Projects, Office Reports & More",
             date: "2025-01-12",
             excerpt: "Every well-prepared document needs professional binding. Students and working professionals around Chennai trust KP Square Publication for clean, durable, and premium binding services.",
-            coverImage: "/blog/printer.jpg",
+            coverImage: "/images/packaging/labelss.jpg",
         },
         {
             title: "How to Choose the Best Printing & Xerox Shop in Chennai – A Local Consumer Guide",
             date: "2025-02-05",
             excerpt: "Chennai has thousands of printing shops, but not all deliver professional-grade results. Before choosing a printing or Xerox center",
-            coverImage: "/blog/printer.jpg",
+            coverImage: "/images/packaging/stickers.avif",
         },
         {
             title: "Why Chennaixerox.com Is the Most Searched Printing Website in Anna Nagar",
             date: "2025-02-15",
             excerpt: "Chennaixerox.com has become a preferred online destination for customers looking for fast, professional document services in Chennai.",
-            coverImage: "/blog/printer.jpg",
+            coverImage: "/images/packaging/labels.jpg",
         }
     ];
 
     return (
-        <section className="flex flex-wrap justify-center pt-8 dark:bg-darkmode pb-0" id="blog">
+
+        
+        <section className="flex flex-wrap justify-center mt-24 pt-8 dark:bg-white pb-0" id="blog">
             <div className="container mx-auto">
                 <div className="grid grid-cols-12 gap-7">
 

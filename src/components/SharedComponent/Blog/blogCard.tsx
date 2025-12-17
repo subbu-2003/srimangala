@@ -33,7 +33,7 @@ const BlogCard = ({ blog }: any) => {
                 <h3>
                     <Link
                         href={`/blog/${slug}`}
-                        className="mb-4 inline-block font-semibold text-black dark:text-white hover:text-primary text-[22px] leading-[2rem]"
+                        className="mb-4 inline-block font-semibold text-black dark:text-black hover:text-primary text-[22px] leading-[2rem]"
                     >
                         {title}
                     </Link>

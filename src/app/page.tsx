@@ -10,7 +10,7 @@ import Upcoming from '@/components/Home/Upcoming';
 import Testimonials from '@/components/Home/Testimonials';
 import TicketSection from '@/components/Home/TicketSection';
 export const metadata: Metadata = {
-  title: "KP SQUARE",
+  title: "Sri Mangala Enterprises – India’s Trusted Printing & Packaging Supplier",
 };
 
 export default function Home() {

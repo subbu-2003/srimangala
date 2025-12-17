@@ -5,7 +5,7 @@ const QuickPicks = () => {
   const items = [
     {
       title: "Packaging Labels",
-      img: "/images/packaging/labels.png",
+      img: "/images/packaging/labelss.jpg",
       points: [
         "Circle, Rectangle, Square, Custom Shape & More!",
         "20+ Sizes to Fit Any Need",
@@ -14,7 +14,7 @@ const QuickPicks = () => {
     },
     {
       title: "Stickers",
-      img: "/images/packaging/stickers.png",
+      img: "/images/packaging/stickers.avif",
       points: [
         "Circle, Square, Oval, Custom Shape & More!",
         "Die-cut, Foil and Vinyl Options",
@@ -23,7 +23,7 @@ const QuickPicks = () => {
     },
     {
       title: "Packaging Boxes",
-      img: "/images/packaging/boxes.png",
+      img: "/images/packaging/labels.jpg",
       points: [
         "From 5 pieces",
         "Variety of styles and Custom options",
@@ -32,7 +32,7 @@ const QuickPicks = () => {
     },
     {
       title: "Packaging Labels",
-      img: "/images/packaging/labels.png",
+      img: "/images/packaging/labelss.jpg",
       points: [
         "Circle, Rectangle, Square, Custom Shape & More!",
         "20+ Sizes to Fit Any Need",
@@ -41,7 +41,7 @@ const QuickPicks = () => {
     },
     {
       title: "Stickers",
-      img: "/images/packaging/stickers.png",
+      img: "/images/packaging/stickers.avif",
       points: [
         "Circle, Square, Oval, Custom Shape & More!",
         "Die-cut, Foil and Vinyl Options",
@@ -50,7 +50,7 @@ const QuickPicks = () => {
     },
     {
       title: "Packaging Boxes",
-      img: "/images/packaging/boxes.png",
+      img: "/images/packaging/labels.jpg",
       points: [
         "From 5 pieces",
         "Variety of styles and Custom options",

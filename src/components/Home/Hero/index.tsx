@@ -35,7 +35,7 @@ const Hero = () => {
           <div className="flex justify-center px-4">
             <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
               <img
-                src="/images/banner/xerox1.jpg"
+                src="/images/banner/pack11.jpg"
                 alt="Printing Services"
                 className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
               />
@@ -48,7 +48,31 @@ const Hero = () => {
           <div className="flex justify-center px-4">
             <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
               <img
-                src="/images/banner/xerox2.avif"
+                src="/images/banner/pack22.jpg"
+                alt="Packaging Solutions"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+
+ <SwiperSlide>
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/pack33.jpg"
+                alt="Packaging Solutions"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+
+ <SwiperSlide>
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/pack44.avif"
                 alt="Packaging Solutions"
                 className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
               />

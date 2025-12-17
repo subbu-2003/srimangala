@@ -8,22 +8,22 @@ const EventTicket = () => {
 {
 title: "Customization",
 desc: "Personalized packaging solutions tailored to your preferences",
-icon: "/images/whychoose/customization.png",
+icon: "/images/whychoose/1ico.png",
 },
 {
 title: "Sustainability",
 desc: "Packaging with a conscience",
-icon: "/images/whychoose/sustainability.png",
+icon: "/images/whychoose/2ico.png",
 },
 {
 title: "Low MOQ",
 desc: "Flexible options with affordable prices and low minimums",
-icon: "/images/whychoose/low-moq.png",
+icon: "/images/whychoose/3ico.png",
 },
 {
 title: "Expertise",
 desc: "From Startups to Established Business – supporting Every Growth Journey",
-icon: "/images/whychoose/expertise.png",
+icon: "/images/whychoose/4ico.png",
 },
 ];
     return (

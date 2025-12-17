@@ -18,12 +18,12 @@ export default function Home() {
     <main>
       <Hero />
       <Quickprint />
-      <ThumbnailCarousel/>
+      {/* <ThumbnailCarousel/> */}
        <EventTicket/>
       <WorkSpeakers/>
       {/* <Upcoming/> */}
       {/* <Highlight/> */}
-      <TicketSection/>
+      {/* <TicketSection/> */}
     </main>
   )
 }

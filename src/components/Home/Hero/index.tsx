@@ -1,6 +1,6 @@
 "use client";
+
 import Image from "next/image";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 
@@ -8,72 +8,57 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 const Hero = () => {
-    return (
-    <section className="relative w-full h-[85vh] mt-16 overflow-hidden">
-         {/* ===== TOP HEADING ===== */}
-          
-    <Swiper
+  return (
+    <section className="relative w-full bg-[#efe0d2] mt-16   overflow-hidden">
+
+      {/* ===== HEADING ===== */}
+      <div className="text-center dark: text-black mb-10 px-4">
+        <h1 className=" text-2xl md:text-4xl font-bold text-gray-900 leading-tight">
+          Sri Mangala Enterprises – India’s Trusted Printing & Packaging Supplier
+        </h1>
+        <p className="mt-3 text-gray-700 text-base md:text-lg">
+          Custom printing & packaging solutions that elevate your brand
+        </p>
+      </div>
+
+      {/* ===== SLIDER ===== */}
+      <Swiper
         modules={[Autoplay, Pagination]}
         autoplay={{ delay: 3000 }}
         pagination={{ clickable: true }}
         loop={true}
-        className="h-full"
-    >
+        className="max-w-6xl mx-auto"
+      >
 
-        {/* ================= SLIDE 1 ================= */}
+        {/* ===== SLIDE 1 ===== */}
         <SwiperSlide>
-            <div className="h-full w-full flex flex-col md:flex-row items-center justify-center px-4 md:px-10 gap-6">
-
-                {/* LEFT IMAGE BOX */}
-                <div className="w-full md:w-2/3 bg-white rounded-3xl p-5 shadow-lg">
-                    <img
-                        src="/images/banner/xerox1.jpg"
-                        alt="Order Prints Online"
-                        className="w-full h-full object-contain rounded-2xl"
-                    />
-                </div>
-
-                {/* RIGHT TEXT CARD */}
-                <div className="w-full md:w-1/3 flex items-center justify-center">
-                    <div className="bg-transparent backdrop-blur-lg shadow-md rounded-2xl px-10 py-8 text-start w-full md:w-auto">
-                        <h2 className="text-2xl font-semibold mb-2">Print Quick</h2>
-                        <button className="text-xl mt-3 flex items-center gap-2 justify-center">
-                            →
-                        </button>
-                    </div>
-                </div>
-
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/xerox1.jpg"
+                alt="Printing Services"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
             </div>
+          </div>
         </SwiperSlide>
 
-        {/* ================= SLIDE 2 ================= */}
+        {/* ===== SLIDE 2 ===== */}
         <SwiperSlide>
-            <div className="h-full w-full flex flex-col md:flex-row items-center justify-center px-4 md:px-10 gap-6">
-
-                <div className="w-full md:w-2/3  bg-white rounded-3xl p-5 shadow-lg">
-                    <img
-                        src="/images/banner/xerox2.avif"
-                        alt="Order Prints Online"
-                        className="w-full h-full object-contain rounded-2xl"
-                    />
-                </div>
-
-                <div className="w-full md:w-1/3 flex items-center justify-center">
-                    <div className="bg-transparent backdrop-blur-lg shadow-md rounded-2xl px-10 py-8 text-start w-full md:w-auto">
-                        <h2 className="text-2xl font-semibold mb-2">Print Quick</h2>
-                        <button className="text-xl mt-3 flex items-center gap-2 justify-center">
-                            →
-                        </button>
-                    </div>
-                </div>
-
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/xerox2.avif"
+                alt="Packaging Solutions"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
             </div>
+          </div>
         </SwiperSlide>
-    </Swiper>
-</section>
 
-
-    );
+      </Swiper>
+    </section>
+  );
 };
 
 export default Hero;

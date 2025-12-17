@@ -1,153 +1,110 @@
-import React, { FC } from "react";
+import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-const Footer: FC = () => {
-    return (
-        <footer className="bg-secondary pt-20 pb-10 border-t border-dark_border">
-            <div className="container">
+const Footer = () => {
+  return (
+    <footer className="bg-[#efe0d2] pt-16 pb-8 border-t">
+      <div className="container mx-auto px-6">
 
-                {/* Top Section */}
-                <div className="grid md:grid-cols-4 mt-20 grid-cols-1 gap-10 pb-12 border-b border-dark_border">
+        {/* Top Grid */}
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-10 text-gray-700">
 
-                    {/* Logo + Small Description */}
-                    <div>
-                        <Link href="/">
-                            <Image
-                                src="/images/logo/kp.png"
-                                alt="Logo"
-                                width={50}
-                                height={60}
-                                className="w-16 dark:block hidden"
-                            />
-                        </Link>
-                        <p className="text-PaleCerulean mt-4 text-base">
-                            Your trusted platform for events, conferences and more.
-                        </p>
-                    </div>
+          {/* Find Stores */}
+          <div>
+            <h4 className="font-semibold mb-4">Find Stores</h4>
+            <ul className="space-y-2">
+              {["Bangalore", "Gurgaon", "New Delhi", "Chennai", "Hyderabad", "Pune"].map(city => (
+                <li key={city}>{city}</li>
+              ))}
+            </ul>
+          </div>
 
-                    {/* Quick Links */}
-                    <div>
-                        <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
-                        <ul className="space-y-2">
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/">Home</Link>
-                            </li>
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/aboutus">About Us</Link>
-                            </li>
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/service">Service</Link>
-                            </li>
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/blog">Blog</Link>
-                            </li>
-                             <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/contact">Contact</Link>
-                            </li>
-                        </ul>
-                    </div>
+          {/* Our Company */}
+          <div>
+            <h4 className="font-semibold mb-4">Our Company</h4>
+            <ul className="space-y-2">
+              <li><Link href="/about">About us</Link></li>
+              <li><Link href="/careers">Careers</Link></li>
+              <li><Link href="/blog">Blog</Link></li>
+            </ul>
+          </div>
 
-                    {/* Terms & Policies */}
-                    <div>
-                        <h3 className="text-white text-xl font-semibold mb-4">Terms & Policies</h3>
-                        <ul className="space-y-2">
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/terms">Terms & Conditions</Link>
-                            </li>
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/privacy">Privacy Policy</Link>
-                            </li>
-                             <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/paymentpolicy">Payment Policy</Link>
-                            </li>
-                            
-                            <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/refundpolicy">Refund Policy</Link>
-                            </li>
-                             <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/deliverypolicy">Delivery Policy</Link>
-                            </li>
-                             <li className="text-PaleCerulean hover:text-primary transition">
-                                <Link href="/disclaimer">Disclaimer</Link>
-                            </li>
-                        </ul>
-                    </div>
+          {/* Support */}
+          <div>
+            <h4 className="font-semibold mb-4">Support</h4>
+            <ul className="space-y-2">
+              <li>Help</li>
+              <li>Business Solutions</li>
+              <li>Find Stores</li>
+              <li>My Account</li>
+              <li>Track Order</li>
+            </ul>
+          </div>
 
-                    {/* Social Icons */}
-                  <div>
-  <h3 className="text-white text-xl font-semibold mb-4">Follow Us</h3>
+          {/* Important Links */}
+          <div>
+            <h4 className="font-semibold mb-4">Important Links</h4>
+            <ul className="space-y-2">
+              <li>Privacy Policy</li>
+              <li>Delivery & Return Policy</li>
+              <li>Terms & conditions</li>
+            </ul>
+          </div>
 
-  <ul className="flex items-center gap-5">
-
-    {/* Facebook */}
-    <li>
-      <Link href="https://www.facebook.com/soundira.p?mibextid=9R9pXO" className="group">
-        <img 
-          src="/icons/facebook.png" 
-          alt="Facebook" 
-          className="w-9 h-9 group-hover:opacity-70"
-        />
-      </Link>
-    </li>
-
-    {/* Instagram */}
-    <li>
-      <Link href="https://www.instagram.com/kpsquarecopier_chennai?igsh=ZzhseGk1aWVqaTdi" className="group">
-        <img 
-          src="/icons/instagram.png" 
-          alt="Instagram" 
-          className="w-9 h-9 group-hover:opacity-70"
-        />
-      </Link>
-    </li>
-
-    {/* YouTube */}
-    <li>
-      <Link href="https://www.youtube.com/@kpsquaretnpsc" className="group">
-        <img 
-          src="/icons/youtube.png" 
-          alt="YouTube" 
-          className="w-9 h-9 group-hover:opacity-70"
-        />
-      </Link>
-    </li>
-
-    {/* Threads */}
-    <li>
-      <Link href="https://www.threads.com/@kpsquarepublication" className="group">
-        <img 
-          src="/icons/threads.png" 
-          alt="Threads" 
-          className="w-9 h-9 group-hover:opacity-70"
-        />
-      </Link>
-    </li>
-
-    {/* Google My Business */}
-    <li>
-      <Link href="https://share.google/Zguu1jKkFOfIvWzsV" className="group">
-        <img 
-          src="/icons/gmb.png" 
-          alt="Google My Business" 
-          className="w-7 h-7 group-hover:opacity-70"
-        />
-      </Link>
-    </li>
-
-  </ul>
-</div>
-
-                </div>
-
-                {/* Bottom Section */}
-                <div className="pt-6 text-center text-PaleCerulean">
-                    © {new Date().getFullYear()} All rights reserved.
-                </div>
-
+          {/* Contact + Social */}
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              
+              <span>+91 951 373 4374</span>
             </div>
-        </footer>
-    );
+
+            <div className="flex items-center gap-2">
+          
+              <span>care@printo.in</span>
+            </div>
+
+            {/* Social Icons */}
+            <div>
+              <h4 className="font-semibold mt-4 mb-2">Follow us</h4>
+              <div className="flex gap-3">
+                {["instagram", "facebook", "x", "linkedin", "pinterest"].map(icon => (
+                  <Image
+                    key={icon}
+                    src={`/icons/${icon}.png`}
+                    alt={icon}
+                    width={28}
+                    height={28}
+                    className="cursor-pointer"
+                  />
+                ))}
+              </div>
+            </div>
+
+            {/* App Buttons */}
+            <div className="flex gap-3 mt-4">
+              <Image src="/images/google-play.png" alt="Google Play" width={120} height={40} />
+              <Image src="/images/app-store.png" alt="App Store" width={120} height={40} />
+            </div>
+          </div>
+
+        </div>
+
+        {/* Payment Icons */}
+        <div className="flex justify-center gap-6 mt-10">
+          <Image src="/images/payments/visa.png" alt="Visa" width={60} height={40} />
+          <Image src="/images/payments/mastercard.png" alt="Mastercard" width={60} height={40} />
+          <Image src="/images/payments/upi.png" alt="UPI" width={60} height={40} />
+        </div>
+
+        {/* Copyright */}
+        <div className="text-center text-gray-500 text-sm mt-6">
+          © 2025 Printo Document Services Pvt. Ltd.. All Rights Reserved.
+        </div>
+
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

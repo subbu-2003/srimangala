@@ -78,8 +78,8 @@ const Header: React.FC = () => {
     <>
     <div className="relative"></div>
     <header
-      className={`fixed h-24 top-0 py-1 z-50 w-full bg-transparent transition-all  ${
-        sticky ? "shadow-lg dark:shadow-darkmd bg-white dark:bg-secondary" : "shadow-none"
+      className={`fixed h-24 top-0 py-1 z-50 w-full bg-[#efe0d2] transition-all  ${
+        sticky ? "shadow-lg dark:shadow-darkmd bg-[#efe0d2] dark:bg-[#efe0d2]" : "shadow-none"
       }`}
     >
       <div className="container">
@@ -94,7 +94,7 @@ const Header: React.FC = () => {
             <button
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-              className="flex h-8 w-8 items-center justify-center text-body-color duration-300 dark:text-white"
+              className="flex h-8 w-8 items-center justify-center text-body-color duration-300 dark:text-black"
             >
               <svg
                 viewBox="0 0 16 16"

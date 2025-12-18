@@ -16,15 +16,10 @@ const Page = () => {
   ];
   return (
     <>
-      <HeroSub
-        title="Privacy"
-        description="Please read our terms and conditions carefully before using our services."
-        breadcrumbLinks={breadcrumbLinks}
-      />
+   
 
       <Privacy />
 
-      <TicketSection />
     </>
   );
 };

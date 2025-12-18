@@ -1,66 +1,117 @@
 "use client";
 
+import Image from "next/image";
+
 const Refundpolicy = () => {
   return (
-    <section className="w-full py-20 px-6 md:px-20 dark:bg-darkmode">
-      <div className="max-w-4xl mx-auto bg-dark shadow-lg rounded-2xl p-8 md:p-12">
-       
-        {/* HEADING */}
-        <h1 className="text-3xl md:text-4xl font-bold dark:text-white mb-6">
-          Cancellation & Refund Policy
-        </h1>
+   <section className="w-full bg-white py-20 px-6 mt-20 md:px-20">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-        {/* INTRO */}
-        <p className="dark:text-white mb-8">
-          At <span className="font-semibold">KP Square Publication</span>, printing, photocopying, scanning, and binding services are custom-made and on-demand. 
-          Therefore, cancellations and refunds are limited as outlined below.
-        </p>
+    {/* LEFT CONTENT */}
+    <div>
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        Product Catalog
+      </h1>
 
-        <div className="space-y-6 dark:text-white">
+      <p className="text-gray-700 mb-2 leading-relaxed font-semibold">
+        SRI MANGALA ENTERPRISES
+      </p>
+      <p className="text-gray-700 mb-4">
+        Printing & Packaging Supplier – Wholesale & Retail
+      </p>
 
-          <div>
-            <h2 className="text-xl font-semibold mb-2 dark:text-white">1. Non-Refundable Services</h2>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Orders already printed, processed, or completed</li>
-              <li>Files with formatting or content errors provided by the customer</li>
-              <li>Document reprints due to incorrect submissions by the customer</li>
-            </ul>
-          </div>
+      <p className="text-gray-600 mb-6">
+        📞 98403 41124 &nbsp;|&nbsp; 📧 sales@srimangala.com <br />
+        📍 Chennai &nbsp;|&nbsp; Supplying Across India
+      </p>
 
-          <div>
-            <h2 className="text-xl font-semibold mb-2 dark:text-white">2. Possible Cancellations</h2>
-            <p>
-              Cancellation requests may be considered only if production has not yet begun. Approval of cancellation is entirely at the discretion of KP Square Publication.
-            </p>
-          </div>
+      <div className="space-y-6 text-gray-700">
 
-          <div>
-            <h2 className="text-xl font-semibold mb-2 dark:text-white">3. Refund Processing</h2>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Refunds, if approved, will be sent to the original payment method</li>
-              <li>Processed within 7–10 business days</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-semibold mb-2 dark:text-white">4. Not Responsible For</h2>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Low-quality printing due to low-resolution files</li>
-              <li>Errors present in the customer’s document</li>
-              <li>Delays caused by unforeseen events (technical failures, courier delays, power issues)</li>
-            </ul>
-          </div>
-
+        {/* Corrugated Packaging */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Corrugated Packaging
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Corrugated Boxes</li>
+            <li>Duplex Boxes</li>
+            <li>Mono Cartons</li>
+            <li>Kraft Boxes</li>
+            <li>Die-Cut Boxes</li>
+            <li>Heavy Duty Shipping Boxes</li>
+          </ul>
         </div>
 
-        {/* CONTACT */}
-        <p className="mt-10 dark:text-white text-sm">
-          For any refund or cancellation queries, contact us at  
-          <span className="font-semibold"> support@kpsquarepublication.com</span>.
-        </p>
+        {/* Flexible Packaging */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Flexible Packaging
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>LD, PP, HM Packaging Covers</li>
+            <li>Zip Lock Bags</li>
+            <li>Shrink Wrap Films</li>
+            <li>Stretch Films</li>
+            <li>Bubble Wrap Rolls</li>
+          </ul>
+        </div>
+
+        {/* Branding & Printing */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Branding & Printing
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Stickers & Labels</li>
+            <li>Custom Printed Boxes</li>
+            <li>Product Tags</li>
+            <li>Envelope Covers</li>
+          </ul>
+        </div>
+
+        {/* Tapes & Accessories */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Tapes & Accessories
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>BOPP Packing Tapes</li>
+            <li>Carton Sealing Tapes</li>
+            <li>Printed Tapes</li>
+            <li>Strapping Rolls</li>
+          </ul>
+        </div>
+
+        {/* Eco-Friendly Products */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Eco-Friendly Products
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Paper Bags</li>
+            <li>Recyclable Packaging Options</li>
+          </ul>
+        </div>
 
       </div>
-    </section>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="w-full flex justify-center lg:justify-end">
+      <div className="relative w-full max-w-md h-[420px] rounded-2xl overflow-hidden shadow-lg">
+        <Image
+          src="/images/product catlog.webp" // replace if needed
+          alt="Product Catalog"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
   );
 };
 

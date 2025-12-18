@@ -1,6 +1,14 @@
+"use client";
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Pagination } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
 
 const EventTicket = () => {
 
@@ -18,7 +26,7 @@ icon: "/images/whychoose/2ico.png",
 {
 title: "Low MOQ",
 desc: "Flexible options with affordable prices and low minimums",
-icon: "/images/whychoose/3ico.png",
+icon: "/images/whychoose/3ico.png", 
 },
 {
 title: "Expertise",
@@ -28,9 +36,10 @@ icon: "/images/whychoose/4ico.png",
 ];
     return (
        <section className="bg-white py-20">
-{/* Heading */}
+<div>
+  {/* Heading */}
 <h2 className="text-4xl font-semibold text-center text-gray-800 mb-6">
-Why Choose <span className="font-bold">Printo</span>
+Why Choose <span className="font-bold">Us</span>
 </h2>
 
 
@@ -40,6 +49,72 @@ At PRINTO, we offer a wide range of packaging supplies to suit diverse business 
 Our commitment to versatility ensures tailored options, reflecting your brand's essence.
 Choose us for packaging that speaks volumes about our dedication to quality and innovation.
 </p>
+</div>
+
+
+
+
+      {/* ===== SLIDER ===== */}
+      <Swiper
+        modules={[Autoplay, Pagination]}
+        autoplay={{ delay: 3000 }}
+        pagination={{ clickable: true }}
+        loop={true}
+        className="max-w-6xl mx-auto"
+      >
+
+        {/* ===== SLIDE 1 ===== */}
+        <SwiperSlide>
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/pack11.jpg"
+                alt="Printing Services"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+
+        {/* ===== SLIDE 2 ===== */}
+        <SwiperSlide>
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/pack22.jpg"
+                alt="Packaging Solutions"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+
+ <SwiperSlide>
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/pack33.jpg"
+                alt="Packaging Solutions"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+
+ <SwiperSlide>
+          <div className="flex justify-center px-4">
+            <div className="w-full md:w-4/5 lg:w-3/4 bg-white rounded-3xl shadow-lg p-6">
+              <img
+                src="/images/banner/pack44.avif"
+                alt="Packaging Solutions"
+                className="w-full h-[280px] md:h-[320px] object-contain rounded-2xl"
+              />
+            </div>
+          </div>
+        </SwiperSlide>
+
+      </Swiper>
+
 
 
 {/* Light background box */}

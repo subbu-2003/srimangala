@@ -18,15 +18,12 @@ const Page = () => {
   ];
   return (
     <>
-      <HeroSub
-        title="Refund Policy"
-        description="Please read our terms and conditions carefully before using our services."
-        breadcrumbLinks={breadcrumbLinks}
-      />
+      
+    
 
       <Refundpolicy />
 
-      <TicketSection />
+ 
     </>
   );
 };

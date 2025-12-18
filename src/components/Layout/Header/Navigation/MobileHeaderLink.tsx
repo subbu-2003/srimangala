@@ -22,7 +22,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
     <div className="relative w-full">
       <button
         onClick={item.submenu ? handleToggle : handleNavigate}
-        className={`flex items-center justify-between w-full py-2 text-black dark:text-white focus:outline-none ${path == item.href ? '!text-primary' : null} ${path.startsWith(`/${item.label.toLowerCase()}`) ? '!text-primary' : null}`}
+        className={`flex items-center justify-between w-full py-2 text-black dark:text-fuchsia-600 focus:outline-none ${path == item.href ? '!text-primary' : null} ${path.startsWith(`/${item.label.toLowerCase()}`) ? '!text-primary' : null}`}
       >
         {item.label}
         {item.submenu && (

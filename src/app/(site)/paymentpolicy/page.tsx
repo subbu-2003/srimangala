@@ -17,15 +17,10 @@ const Page = () => {
   ];
   return (
     <>
-      <HeroSub
-        title="Payment Policies"
-        description="Please read our terms and conditions carefully before using our services."
-        breadcrumbLinks={breadcrumbLinks}
-      />
+   
 
       <Paymentpolicy />
 
-      <TicketSection />
     </>
   );
 };

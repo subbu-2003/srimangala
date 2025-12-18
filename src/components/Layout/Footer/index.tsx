@@ -4,63 +4,67 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#efe0d2] pt-16 pb-8 border-t">
+    <footer className="bg-yellow-100 pt-16 pb-8 border-t">
       <div className="container mx-auto px-6">
 
         {/* Top Grid */}
         <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-10 text-gray-700">
-
           {/* Find Stores */}
           <div>
             <h4 className="font-semibold mb-4">Find Stores</h4>
             <ul className="space-y-2">
-              {["Bangalore", "Gurgaon", "New Delhi", "Chennai", "Hyderabad", "Pune"].map(city => (
+              {["Madurai", "Vadipatti"].map((city) => (
                 <li key={city}>{city}</li>
               ))}
             </ul>
           </div>
 
-          {/* Our Company */}
+          {/* Quick Links (Updated) */}
           <div>
-            <h4 className="font-semibold mb-4">Our Company</h4>
+            <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link href="/about">About us</Link></li>
-              <li><Link href="/careers">Careers</Link></li>
+              <li><Link href="/">Home</Link></li>
+              <li><Link href="/aboutus">About</Link></li>
+              <li><Link href="/service">Service</Link></li>
               <li><Link href="/blog">Blog</Link></li>
             </ul>
           </div>
 
-          {/* Support */}
+          {/* Support (Updated) */}
           <div>
             <h4 className="font-semibold mb-4">Support</h4>
             <ul className="space-y-2">
-              <li>Help</li>
-              <li>Business Solutions</li>
-              <li>Find Stores</li>
-              <li>My Account</li>
-              <li>Track Order</li>
+              <li><Link href="/contact">Help</Link></li>
+              <li><Link href="/contact">Contact</Link></li>
             </ul>
           </div>
 
-          {/* Important Links */}
+          {/* Terms */}
           <div>
-            <h4 className="font-semibold mb-4">Important Links</h4>
+            <h4 className="font-semibold mb-4">Terms</h4>
             <ul className="space-y-2">
-              <li>Privacy Policy</li>
-              <li>Delivery & Return Policy</li>
-              <li>Terms & conditions</li>
+              <li className="capitalize">
+                <Link href="/terms">Terms & Conditions</Link>
+              </li>
+              <li className="capitalize">
+                <Link href="/privacy">Privacy Policy</Link>
+              </li>
+              <li className="capitalize">
+                <Link href="/paymentpolicy">Shipping & Return Policy</Link>
+              </li>
+              <li className="capitalize">
+                <Link href="/refundpolicy">Product Catalog Pdf Content</Link>
+              </li>
             </ul>
           </div>
 
           {/* Contact + Social */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              
               <span>+91 951 373 4374</span>
             </div>
 
             <div className="flex items-center gap-2">
-          
               <span>care@printo.in</span>
             </div>
 
@@ -68,29 +72,53 @@ const Footer = () => {
             <div>
               <h4 className="font-semibold mt-4 mb-2">Follow us</h4>
               <div className="flex gap-3">
-                {["instagram", "facebook", "gmb", "youtube", "threads"].map(icon => (
-                  <Image
-                    key={icon}
-                    src={`/icons/${icon}.png`}
-                    alt={icon}
-                    width={28}
-                    height={28}
-                    className="cursor-pointer"
-                  />
-                ))}
+                {["instagram", "facebook", "gmb", "youtube", "threads"].map(
+                  (icon) => (
+                    <Link key={icon} href="#">
+                      <Image
+                        src={`/icons/${icon}.png`}
+                        alt={icon}
+                        width={28}
+                        height={28}
+                        className="cursor-pointer"
+                      />
+                    </Link>
+                  )
+                )}
               </div>
             </div>
-
-        
           </div>
 
         </div>
 
-    
-
         {/* Copyright */}
-        <div className="text-center text-gray-500 text-sm mt-6">
-          © 2025 Printo Document Services Pvt. Ltd.. All Rights Reserved.
+        <div className="mt-5 pt-6">
+          <div className="container mx-auto px-4">
+            <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-sm">
+
+              {/* Left */}
+              <p className="text-PaleCerulean text-center md:text-left">
+                © {new Date().getFullYear()}{" "}
+                <span className="font-semibold text-black">Sri Mangala</span>{" "}
+                All Rights Reserved
+              </p>
+
+              {/* Right */}
+              <p className="flex items-center gap-1 text-PaleCerulean text-center">
+                Made with
+                <span className="text-red-500">❤️</span>
+                by
+                <Link
+                  href="https://e2o.in/"
+                  target="_blank"
+                  className="font-semibold text-primary hover:underline"
+                >
+                  E2o Tech
+                </Link>
+              </p>
+
+            </div>
+          </div>
         </div>
 
       </div>

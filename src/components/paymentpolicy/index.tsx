@@ -1,56 +1,120 @@
 "use client";
 
+import Image from "next/image";
+
 const Paymentpolicy = () => {
   return (
-    <section className="w-full py-20 px-6 md:px-20 dark:bg-darkmode">
-      <div className="max-w-4xl mx-auto bg-dark shadow-lg rounded-2xl p-8 md:p-12">
+  <section className="w-full bg-white py-20 px-6 mt-20 md:px-20">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 
-        {/* HEADING */}
-        <h1 className="text-3xl md:text-4xl font-bold dark:text-dark mb-6">
-          Payment Policy
-        </h1>
+    {/* LEFT CONTENT */}
+    <div>
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+        Shipping & Return Policy
+      </h1>
 
-        {/* SUBTITLE */}
-        <p className="dark:text-dark mb-8">
-          At <span className="font-semibold">KP Square Publication</span>, we follow a clear and customer-friendly payment structure. 
-          All orders require complete payment or partial advance payment as notified during checkout or order confirmation. 
-          Orders are initiated only after payment confirmation.
-        </p>
+      <p className="text-gray-700 mb-8 leading-relaxed">
+        This policy outlines the shipping, return, exchange, and cancellation
+        terms of{" "}
+        <span className="font-semibold text-gray-900">
+          Sri Mangala Enterprises
+        </span>
+        .
+      </p>
 
-        {/* PAYMENT POLICY CONTENT */}
-        <div className="space-y-6 dark:text-dark">
+      <div className="space-y-6 text-gray-700">
 
-          <div>
-            <h2 className="text-xl font-semibold mb-2 dark:text-dark">1. Accepted Payment Modes</h2>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>UPI (Google Pay, PhonePe, Paytm, etc.)</li>
-              <li>Credit/Debit Cards</li>
-              <li>Net Banking</li>
-              <li>Bank Transfers</li>
-              <li>Cash at store</li>
-            </ul>
-          </div>
-
-          <div>
-            <h2 className="text-xl font-semibold mb-2 dark:text-dark">2. Payment Terms</h2>
-            <ul className="list-disc ml-6 space-y-1">
-              <li>Full payment may be required for bulk, urgent, or customized orders</li>
-              <li>Prices may vary until order confirmation based on material cost, customization, and order size</li>
-              <li>GST and applicable service charges will be added as per government regulations</li>
-              <li>Payment failures due to bank or gateway issues are not the responsibility of KP Square Publication</li>
-            </ul>
-          </div>
-
+        {/* Shipping Policy */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Shipping Policy
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              Orders are securely packed and dispatched within 1–3 business
+              days, subject to stock availability.
+            </li>
+            <li>
+              Customized printing orders may require 5–12 business days for
+              processing.
+            </li>
+            <li>
+              We deliver across India through trusted courier and transport
+              partners.
+            </li>
+            <li>
+              Shipping charges vary based on delivery location, order volume,
+              and weight.
+            </li>
+            <li>
+              Tracking details will be shared via WhatsApp, SMS, or email once
+              the order is shipped.
+            </li>
+          </ul>
         </div>
 
-        {/* CONTACT */}
-        <p className="mt-10 dark:text-dark text-sm">
-          For any payment-related queries, contact us at  
-          <span className="font-semibold"> support@kpsquarepublication.com</span>.
-        </p>
+        {/* Return & Exchange Policy */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Return & Exchange Policy
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>
+              Returns are accepted only for damaged, defective, or incorrectly
+              delivered products.
+            </li>
+            <li>
+              Return requests must be raised within 48 hours of receiving the
+              order.
+            </li>
+            <li>
+              Products must be unused, sealed, and returned in their original
+              packaging.
+            </li>
+            <li>
+              Custom-printed packaging materials are not eligible for return or
+              exchange.
+            </li>
+            <li>
+              Refund or replacement will be processed only after inspection and
+              approval.
+            </li>
+          </ul>
+        </div>
+
+        {/* Cancellation Policy */}
+        <div>
+          <h2 className="text-xl font-semibold text-gray-900 mb-2">
+            Cancellation Policy
+          </h2>
+          <ul className="list-disc pl-5 space-y-1">
+            <li>Orders cannot be cancelled once dispatched.</li>
+            <li>
+              Customized product orders cannot be cancelled after design
+              approval.
+            </li>
+          </ul>
+        </div>
 
       </div>
-    </section>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="w-full flex justify-center lg:justify-end">
+      <div className="relative w-full max-w-md h-[420px] rounded-2xl overflow-hidden shadow-lg">
+        <Image
+          src="/images/refund.webp" // you can reuse the same image if needed
+          alt="Shipping and Return Policy"
+          fill
+          className="object-cover"
+          priority
+        />
+      </div>
+    </div>
+
+  </div>
+</section>
+
   );
 };
 

@@ -6,16 +6,16 @@ const Logo: React.FC = () => {
     return (
         <Link href="/">
            <Image
-    src="/images/logo/sriman.png"
+    src="/images/logo/srimanlogo.png"
     alt="logo"
     width={50}      // keep real dimensions
     height={80}
     quality={100}
-    className="dark:hidden w-28 h-auto"   // 👈 reduce size here
+    className="dark:hidden w-24 h-auto"   // 👈 reduce size here
 />
 
             <Image
-                src="/images/logo/sriman.png"
+                src="/images/logo/srimanlogo.png"
                 alt="logo"
                 width={50}      // keep real dimensions
                 height={80}

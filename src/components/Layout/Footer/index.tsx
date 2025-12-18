@@ -59,13 +59,13 @@ const Footer = () => {
           </div>
 
           {/* Contact + Social */}
-          <div className="space-y-4">
+          <div className="space-y-4"> 
             <div className="flex items-center gap-2">
-              <span>+91 951 373 4374</span>
+              <span>+91 98403 41124</span>
             </div>
 
             <div className="flex items-center gap-2">
-              <span>care@printo.in</span>
+              <span>sales@srimangala.com</span>
             </div>
 
             {/* Social Icons */}

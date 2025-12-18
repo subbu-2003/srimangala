@@ -55,10 +55,10 @@ const ContactInfo = () => {
               Wholesale packaging materials, custom-printed boxes, and industrial supplies.
             </p>
             <p className="text-gray-700 dark:text-darktext">
-              📞 Call / WhatsApp: <strong>98403 41124</strong>
+              📞 Call / WhatsApp: <strong> 94459 44479</strong>
             </p>
             <p className="text-gray-700 dark:text-darktext">
-              📧 Email: <strong>sales@srimangala.com</strong>
+              📧 Email: <strong>ashok@srimangala.com</strong>
             </p>
           </div>
 

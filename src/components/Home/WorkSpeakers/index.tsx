@@ -4,44 +4,33 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What is Custom Packaging?",
+    question: "Do you supply all over India?",
     answer:
-      "Custom Packaging involves printing on a base material such as paper, plastic, fabric, paperboard, etc. and then converting the material into the required packaging product which is like a bag or box. You can get custom packing tapes, custom bags, Custom Sticker Printing and much more from Printo.",
+      "Yes, we provide nationwide delivery through trusted logistics partners.",
     open: true,
   },
   {
-    question: "What are the minimum quantities for custom printed packaging?",
+    question: "Do you handle both wholesale and retail?",
     answer:
-      "Minimum order quantities vary based on product type, size, and material. Printo offers low MOQs to support startups and small businesses.",
+      "Absolutely — from small orders to bulk requirements, we support all business sizes.",
   },
   {
-    question: "Does the material affect how my design will look?",
+    question: "Can I get customized packaging?",
     answer:
-      "Yes, different materials absorb ink differently. Our team helps you choose the right material to ensure your design looks its best.",
+      "Yes, we offer custom printing, branding, and size customization.",
   },
   {
-    question:
-      "Can you create other marketing materials to work with my packaging?",
+    question: "How can I place an order?",
     answer:
-      "Absolutely. We offer business cards, flyers, brochures, stickers, and other marketing materials to match your packaging.",
+      "You can contact us via call, WhatsApp, or email for pricing and product details.",
   },
   {
-    question:
-      "What makes ordering custom packaging from Printo different from other packaging companies?",
+    question: "What industries do you serve?",
     answer:
-      "Printo combines quality, customization, low MOQs, and expert support to deliver packaging solutions tailored to your brand.",
-  },
-  {
-    question: "Can I email you my artwork?",
-    answer:
-      "Yes, you can share your artwork with us via email or upload it during the order process.",
-  },
-  {
-    question: "What if I don’t have a logo/artwork yet?",
-    answer:
-      "No worries! Our design team can help create professional artwork for your packaging.",
+      "We serve e-commerce, FMCG, textiles, electronics, food industry, logistics, manufacturing, retail stores, and more.",
   },
 ];
+
 
 export default function WorkSpeakers({ showTitle = true }) {
   const [openIndex, setOpenIndex] = useState<number | null>(0);

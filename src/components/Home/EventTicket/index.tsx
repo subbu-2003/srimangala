@@ -148,6 +148,53 @@ className="object-contain"
 ))}
 </div>
 </div>
+{/* ===== VIDEO SECTION ===== */}
+<div className="bg-white py-20">
+  <div className="max-w-6xl mx-auto px-6">
+
+    {/* Video Heading */}
+    <div className="text-center mb-12">
+      <h3 className="text-3xl font-semibold text-gray-800 mb-4">
+        Watch Our Packaging in Action
+      </h3>
+      <p className="text-gray-600 max-w-3xl mx-auto">
+        Experience how Sri Mangala Printing & Packaging delivers precision,
+        quality materials, and scalable bulk packaging solutions for businesses.
+      </p>
+    </div>
+
+    {/* Two Videos Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+      {/* LEFT VIDEO */}
+      <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube-nocookie.com/embed/EO2-9I3g2KE?rel=0&modestbranding=1"
+          title="Packaging Process Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+      {/* RIGHT VIDEO */}
+      <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl">
+        <iframe
+          className="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube-nocookie.com/embed/PyodpXv9Y2s?rel=0&modestbranding=1"
+          title="Bulk Packaging Video"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
 </section>
 );
 };

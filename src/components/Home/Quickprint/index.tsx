@@ -3,61 +3,65 @@ import Image from "next/image";
 
 const QuickPicks = () => {
   const items = [
-    {
-      title: "Packaging Labels",
-      img: "/images/packaging/labelss.jpg",
-      points: [
-        "Circle, Rectangle, Square, Custom Shape & More!",
-        "20+ Sizes to Fit Any Need",
-        "White & Clear (Waterproof), Kraft & Paper Materials",
-      ],
-    },
-    {
-      title: "Stickers",
-      img: "/images/packaging/stickers.avif",
-      points: [
-        "Circle, Square, Oval, Custom Shape & More!",
-        "Die-cut, Foil and Vinyl Options",
-        "Multicolor printing that grabs attention",
-      ],
-    },
-    {
-      title: "Packaging Boxes",
-      img: "/images/packaging/labels.jpg",
-      points: [
-        "From 5 pieces",
-        "Variety of styles and Custom options",
-        "Single color print, Multi color, or Add-ons – Brand it your way",
-      ],
-    },
-    {
-      title: "Packaging Labels",
-      img: "/images/packaging/labelss.jpg",
-      points: [
-        "Circle, Rectangle, Square, Custom Shape & More!",
-        "20+ Sizes to Fit Any Need",
-        "White & Clear (Waterproof), Kraft & Paper Materials",
-      ],
-    },
-    {
-      title: "Stickers",
-      img: "/images/packaging/stickers.avif",
-      points: [
-        "Circle, Square, Oval, Custom Shape & More!",
-        "Die-cut, Foil and Vinyl Options",
-        "Multicolor printing that grabs attention",
-      ],
-    },
-    {
-      title: "Packaging Boxes",
-      img: "/images/packaging/labels.jpg",
-      points: [
-        "From 5 pieces",
-        "Variety of styles and Custom options",
-        "Single color print, Multi color, or Add-ons – Brand it your way",
-      ],
-    }
-  ];
+  // ===== PRINTING & BRANDING =====
+  {
+    title: "Packaging Labels",
+    img: "/images/packaging/labelss.jpg",
+    points: [
+      "Circle, Rectangle, Square, Custom Shape & More!",
+      "20+ Sizes to Fit Any Need",
+      "White & Clear (Waterproof), Kraft & Paper Materials",
+    ],
+  },
+  {
+    title: "Custom Stickers",
+    img: "/images/packaging/stickers.avif",
+    points: [
+      "Circle, Square, Oval, Custom Shape & More!",
+      "Die-cut, Foil and Vinyl Options",
+      "Multicolor printing that grabs attention",
+    ],
+  },
+  {
+    title: "Packaging Boxes",
+    img: "/images/packaging/labels.jpg",
+    points: [
+      "From 5 pieces",
+      "Variety of styles and Custom options",
+      "Single color print, Multi color, or Add-ons – Brand it your way",
+    ],
+  },
+
+  // ===== PACKING & PROTECTION =====
+  {
+    title: "Box Packing Solutions",
+    img: "/images/services/ser2.jpg",
+    points: [
+      "Secure packing for safe transportation",
+      "Suitable for fragile & heavy items",
+      "Ideal for warehouse & dispatch use",
+    ],
+  },
+  {
+    title: "Protective Packaging Materials",
+    img: "/images/services/proct.jpg",
+    points: [
+      "Bubble wrap, foam & cushioning materials",
+      "Prevents damage during shipping",
+      "Used in e-commerce & logistics",
+    ],
+  },
+  {
+    title: "Shipping & Parcel Packing",
+    img: "/images/services/ser4.jpg",
+    points: [
+      "Strong outer packing for long-distance delivery",
+      "Weather & handling resistant packaging",
+      "Perfect for courier & logistics companies",
+    ],
+  },
+];
+
 
   return (
     <section className="bg-white py-16">

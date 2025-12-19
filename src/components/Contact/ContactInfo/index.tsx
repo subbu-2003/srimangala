@@ -36,10 +36,10 @@ const ContactInfo = () => {
               Contact Details
             </h3>
             <p className="text-gray-700 dark:text-darktext">
-              📞 Mobile: <strong>98403 41124</strong>
+              Mobile: <strong> 94459 44479</strong>
             </p>
             <p className="text-gray-700 dark:text-darktext">
-              📧 Email: <strong>sales@srimangala.com</strong>
+              Email: <strong>sales@srimangala.com</strong>
             </p>
             <p className="text-sm text-gray-600 dark:text-darktext mt-2">
               Monday – Saturday, 9:00 AM – 7:00 PM
@@ -55,10 +55,10 @@ const ContactInfo = () => {
               Wholesale packaging materials, custom-printed boxes, and industrial supplies.
             </p>
             <p className="text-gray-700 dark:text-darktext">
-              📞 Call / WhatsApp: <strong> 94459 44479</strong>
+               Call / WhatsApp: <strong>98403 41124 </strong>
             </p>
             <p className="text-gray-700 dark:text-darktext">
-              📧 Email: <strong>ashok@srimangala.com</strong>
+               Email: <strong>ashok@srimangala.com</strong>
             </p>
           </div>
 
